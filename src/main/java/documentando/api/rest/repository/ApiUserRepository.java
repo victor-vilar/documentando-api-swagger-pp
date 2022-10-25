@@ -37,5 +37,22 @@ public class ApiUserRepository {
 		
 	}
 	
+	public ApiUser findUserById(Integer id) {
+		List<ApiUser> usuarios = this.findAll();
+		
+		if (id > usuarios.size()) {
+			System.out.println("Usuario não encontrado");
+		}
+		
+		return usuarios.get(id);
+		}
+	
+	public ApiUser findUserByName(String nome) {
+		List<ApiUser> usuarios = this.findAll();
+		
+		return usuarios.stream().findAny()
+	
+	}
+	
 	
 }
