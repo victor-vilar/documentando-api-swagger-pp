@@ -55,5 +55,3 @@ build/
 *.zip
 *.tar.gz
 *.rar
-
-mvnw
