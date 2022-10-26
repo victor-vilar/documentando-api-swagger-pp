@@ -27,8 +27,8 @@ public class ApiUserController {
 	}
 	
 	@GetMapping("/{userName}")
-	public ApiUser findUserByName(@PathVariable String username) {
-		return this.repository.findUserByName(username);
+	public ApiUser findUserByName(@PathVariable String userName) {
+		return this.repository.findUserByName(userName);
 	}
 	
 	@DeleteMapping("/{id}")
